@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@MappedSuperclass
+@MappedSuperclass //feature e news extends essa classe
 public class BaseItem {
 
     @Id
