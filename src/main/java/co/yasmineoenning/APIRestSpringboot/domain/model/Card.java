@@ -12,7 +12,7 @@ public class Card {
     private Long id;
     @Column(unique = true)
     private String cardNumber;
-    @Column(name = "avaliable_limit", precision = 13, scale = 2)
+    @Column(name = "avaliable_limit", precision = 13, scale = 2) //99.999.999.999,99
     private BigDecimal cardLimit;
 
 
