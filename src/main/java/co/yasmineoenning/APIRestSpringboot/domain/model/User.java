@@ -15,9 +15,9 @@ public class User {
     private Account account;
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER) //tpda vez que eu buscar usu no banco, qro listsa de features dele
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER) //tpda vez que eu buscar usu no banco, qro listsa de features dele
     private List<Feature> features;
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
 
     public Long getId() {
